@@ -10,6 +10,7 @@ public class Connect {
 
     Driver driver = (Driver) Class.forName("com.mysql.jdbc.Driver").newInstance();
     DriverManager.registerDriver(driver);
+    
     StringBuilder url = new StringBuilder();
     url.
             append("jdbc:mysql://").
